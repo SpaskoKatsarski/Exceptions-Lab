@@ -38,7 +38,7 @@ namespace T06.MoneyTransactions
                         }
 
                         accounts[accNumber] += sum;
-                        Console.WriteLine($"Account {accNumber} has new balance: {accounts[accNumber]}");
+                        Console.WriteLine($"Account {accNumber} has new balance: {accounts[accNumber]:f2}");
                     }
                     else if (cmdType == "Withdraw")
                     {
@@ -52,7 +52,7 @@ namespace T06.MoneyTransactions
                         }
 
                         accounts[accNumber] -= sum;
-                        Console.WriteLine($"Account {accNumber} has new balance: {accounts[accNumber]}");
+                        Console.WriteLine($"Account {accNumber} has new balance: {accounts[accNumber]:f2}");
                     }
                     else
                     {
